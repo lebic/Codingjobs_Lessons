@@ -1,0 +1,42 @@
+#presentation {
+    /* Take the full height */
+    height: 100vh;
+    color: #fff;
+
+    background-image: url('../img/star-wars-bg.jpg');
+
+    background-repeat: no-repeat;
+    /*
+        cover: resize image in the available space
+        contain : display entirely in the space
+    */
+    background-size: cover;
+    background-position: center top;
+
+    /* fixed: image doesnt scroll */
+    background-attachment: fixed;
+    
+}
+
+#news {
+    height: 50vh;
+
+    background-image: url('../img/vador.jpg');
+    background-repeat: no-repeat;
+
+    background-position: 50%;
+    background-size: 250px auto;
+
+    background-color: #000;
+    color: #fff;
+
+    border-radius: 30px 30px 0px 0px;
+    padding: 40px;
+
+    background-attachment: fixed;
+}
+
+/* opacity (value from 0 to 1) */
+footer {
+    opacity: 0.5;
+}

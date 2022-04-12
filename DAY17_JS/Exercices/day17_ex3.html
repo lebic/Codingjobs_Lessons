@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day17_ex3</title>
+  </head>
+  <body>
+    <input type="range" start="0" min="0" max="4" step="1" id="slider" />
+
+    <input type="button" placeholder="click" name="" id="nbOfMovies" />
+    <button type="button" id="load">Load</button>
+
+    <div id="movies"></div>
+
+    <script>
+      /*
+        We want to display some data in the page like a list of movies, with a title and a small description.
+        But we only display this list of movies after a click on a button.
+        The user can choose how many items should be displayed by entering a number in an input.
+        */
+
+      const moviesList = [
+        {
+          title: "1 The legend of the old mountain",
+          description: "small description",
+        },
+        {
+          title: "2 The horse with no name",
+          description: "laaaaaa la lalala la la laaaaa laaaa",
+        },
+        { title: "3 The sea", description: "just water for 2 hours" },
+        {
+          title: "4 American sniper",
+          description: "a guy with a gun that shoots",
+        },
+        { title: "5 Lucky Luke", description: "Luke , but he is lucky" },
+      ];
+
+      const slider = document.querySelector("#slider");
+
+      const sliderEvent = slider.addEventListener("input", (event) => {
+        console.log(event);
+        if (event.target.value === 1) {
+          console.log(moviesList[title]);
+        }
+      });
+
+      // -------------- OTHER VERSION----------------------//
+
+      const nbOfMoviesInput = document.querySelector("#nbOfMovies");
+      const loadBtn = document.querySelector("#load");
+      const moviesContainer = document.querySelector("#movies");
+
+      loadBtn.addEventListener("click", () => {
+        moviesContainer.innerHTML = "";
+        const nbOfMovies = nbOfMoviesInput.value;
+
+        const filterMovies = movies.filter((movie) => {
+          return movie.title.toLowerCase().includes(nbOfMovies);
+        });
+
+        movies.forEach((movie) => {
+          const movieElement = document.createElement("div");
+          moviesContainer.appendChild(movieElement);
+
+          const movieTitle = document.createElement("h2");
+          moviesContainer.appendChild(movieTitle);
+          movieElement.textContent = movie.title;
+
+          const movieDesc = document.createElement("p");
+          movieElement.appendChild(movieDesc);
+          movieDesc.textContent = movie.description;
+        });
+      });
+    </script>
+  </body>
+</html>

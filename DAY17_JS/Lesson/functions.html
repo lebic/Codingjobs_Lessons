@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day16_ex3_functions</title>
+  </head>
+  <body>
+    <script>
+      const movies = [
+        { title: "Die Hard 1" },
+        { title: "Die hard 2" },
+        { title: "die Hard 3" },
+        { title: "Die Hard 4" },
+        { title: "Independance" },
+        { title: "Ice Age 45" },
+      ];
+
+      /* Let consider the above movies array.
+      Use a the array.find() metho to find specific items in this array:
+      the ones containing an "Die hard" */
+
+      const filterMovies = movies.filter((movie) => {
+        return movie.title.toLowerCase().includes("die hard");
+      });
+      console.log(filterMovies);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+* {
+  margin: 0%;
+}
+
+/*Phones version*/
+
+@media only screen and (max-width: 600px) {
+  header {
+    margin: 0;
+    height: 6vh;
+    background-color: rgb(247, 236, 213);
+    box-shadow: 1px 9px 15px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  header h1 {
+    position: relative;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -50%);
+
+    font-family: "Roboto", sans-serif;
+    font-variant: small-caps;
+    font-size: 2vh;
+    color: rgb(32, 32, 32);
+  }
+
+  #navigation {
+    display: flex;
+
+    position: relative;
+    top: 3%;
+    left: 70%;
+    width: fit-content;
+    text-align: right;
+    text-decoration: none;
+  }
+
+  ul.navigation_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0%;
+  }
+
+  li {
+    display: flex;
+    text-align: center;
+    position: relative;
+
+    text-decoration: none;
+  }
+
+  .navigation_items {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 3px;
+    font-family: "montserrat", sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.712);
+  }
+}
+
+/*Desktop version*/
+
+@media only screen and (min-width: 600px) {
+  header {
+    margin: 0;
+    height: 10vh;
+    background-color: rgb(247, 236, 213);
+    box-shadow: 1px 9px 15px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  header h1 {
+    position: relative;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -50%);
+
+    font-family: "Roboto", sans-serif;
+    font-variant: small-caps;
+    font-size: 4vh;
+    color: rgb(32, 32, 32);
+  }
+
+  #navigation {
+    display: flex;
+
+    position: relative;
+    left: 70%;
+    width: fit-content;
+    text-align: right;
+    text-decoration: none;
+  }
+
+  ul.navigation_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0%;
+  }
+
+  li {
+    display: flex;
+    text-align: center;
+    position: relative;
+
+    text-decoration: none;
+  }
+
+  .navigation_items {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 3px;
+
+    font-family: "montserrat", sans-serif;
+    font-size: 2.5vh;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.712);
+  }
+}

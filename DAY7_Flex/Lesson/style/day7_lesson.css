@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: aqua;
+
+  /* display: flex to handle a complex and flexible layout */
+  display: flex;
+  height: 500px;
+
+  /* choose the direction of te flexbox (row or collumn) */
+  flex-direction: row;
+  overflow: hidden;
+
+  /* Choose if the element goes to the next line or not */
+  flex-wrap: wrap;
+
+  /*Control the space/position between the elements on the main axis (x) */
+  justify-content: space-around;
+
+  /*Control the space/position between the elements on the second axis (y) */
+  align-items: flex-start;
+
+  /*Align-content specify the space between the rows */
+  align-content: space-around;
+}
+.article {
+  width: 40%;
+  margin: 10px;
+  padding: 20px;
+  background-color: blueviolet;
+}
+
+/* you can modify  indiviually the place one box would take in the containe */
+
+.article:nth-of-type(4) {
+  flex-basis: 60%;
+}

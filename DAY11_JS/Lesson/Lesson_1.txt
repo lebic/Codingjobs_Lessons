@@ -1,0 +1,15 @@
+INTRO :
+--------
+
+CLient side (Laptop, phone,... Run code for you through a server)
+ / Server Side (Catch data,in a physical place,..)
+
+
+-webkit-border-width: 10px
+
+'-webkit-' is an extension just in case it doesn't work on others web browsers than Google chrome
+
+DOM elements, the way you lay down your document. Everything that include a div/ container 
+
+Arrays (for numbers)
+Objects (for strings or number)

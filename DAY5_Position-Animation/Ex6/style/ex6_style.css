@@ -1,0 +1,34 @@
+body {
+  text-align: center;
+}
+
+.title {
+  font-family: "roboto", sans-serif;
+  font-variant-caps: small-caps;
+}
+
+div {
+  width: 300px;
+  margin: 20px auto 80px auto;
+  padding: 10px;
+  border: 1px #03f solid;
+  background: #9cc;
+}
+
+span {
+  text-align: right;
+  font-style: italic;
+}
+
+div > p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+#div1:hover {
+  transform: skewx(-25deg);
+}
+
+#div2:hover {
+  transform: skewy(10deg);
+}

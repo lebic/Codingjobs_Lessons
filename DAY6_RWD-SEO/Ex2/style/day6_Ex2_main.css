@@ -1,0 +1,162 @@
+/*Mobile version */
+
+@media only screen and (max-width: 600px) {
+  #hero {
+    display: flex;
+    background-image: url("https://leclaireur.fnac.com/wp-content/uploads/2021/11/marvels-avengers.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 70vh;
+    z-index: 0;
+  }
+
+  .hero_title {
+    display: flex;
+
+    position: relative;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+
+    font-family: "montserrat", sans-serif;
+    font-variant: small-caps;
+    font-size: 3vh;
+    color: rgb(44, 44, 44);
+
+    background-color: rgba(255, 255, 255, 0.459);
+    line-height: 4vh;
+    width: 100%;
+    z-index: 1;
+  }
+
+  h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    font-family: "montserrat", sans-serif;
+    font-variant-caps: all-small-caps;
+  }
+
+  h3 {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+    font-variant-caps: all-small-caps;
+    font-weight: 500;
+  }
+
+  /* Mobile - Teasers */
+
+  .teaser_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .teaser_card h2 {
+    margin-top: 10%;
+  }
+
+  .teaser {
+    width: 30%;
+    margin: 0 5px;
+  }
+
+  .teaser p {
+    font-weight: 700;
+  }
+
+  .teaser img {
+    width: 100%;
+    box-shadow: 3px 5px 7px -1px rgba(0, 0, 0, 0.51);
+  }
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 600px) {
+  #hero {
+    display: flex;
+    background-image: url("https://leclaireur.fnac.com/wp-content/uploads/2021/11/marvels-avengers.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 70vh;
+    z-index: 0;
+  }
+
+  .hero_title {
+    display: flex;
+
+    position: relative;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+
+    font-family: "montserrat", sans-serif;
+    font-variant: small-caps;
+    font-size: 3vh;
+    color: rgb(44, 44, 44);
+
+    background-color: rgba(255, 255, 255, 0.459);
+    line-height: 10vh;
+    width: 100%;
+    z-index: 1;
+  }
+
+  h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 10vh;
+
+    font-family: "montserrat", sans-serif;
+    font-variant-caps: all-small-caps;
+  }
+
+  h3 {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+    font-variant-caps: all-small-caps;
+    font-weight: 500;
+  }
+
+  /* Mobile - Teasers */
+
+  .teaser_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+    margin-top: 50px;
+  }
+
+  .teaser_card h2 {
+    margin-top: 10%;
+  }
+
+  .teaser {
+    width: 30%;
+    margin: 0 5px;
+  }
+
+  .teaser p {
+    font-weight: 700;
+  }
+
+  .teaser img {
+    width: 60%;
+    box-shadow: 3px 5px 7px -1px rgba(0, 0, 0, 0.51);
+  }
+}

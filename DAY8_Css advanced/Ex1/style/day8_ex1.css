@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(0.25turn, rgb(240, 86, 240), rgb(255, 166, 0));
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+  align-items: baseline;
+
+  height: 15vh;
+
+  margin: 30px;
+  margin-inline: 25%;
+}
+
+nav > h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 25px;
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: fit-content;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  text-align: center;
+  list-style: none;
+  margin-inline: 10px;
+
+  font-weight: 600;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+
+main {
+  display: flex;
+  height: 70vh;
+}
+
+#hero_text {
+  color: white;
+}
+
+button {
+  background-color: white;
+  border: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: fit-content;
+  color: white;
+  font-size: 10px;
+}

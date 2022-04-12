@@ -1,0 +1,58 @@
+/* Your css code */
+
+.face {
+  display: block;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: rgb(146, 223, 101);
+  z-index: 0;
+}
+
+.face:hover {
+  background-color: blueviolet;
+}
+
+.mouth {
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  background-image: url("../Smiley/img/mouth.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 50%;
+  z-index: 1;
+}
+
+.mouth:hover {
+  width: 450px;
+  height: 250px;
+  background-image: url("../Smiley/img/mouth.png");
+  transition: 100ms;
+  z-index: 1;
+}
+
+.eye {
+  /* Two blocks or more on the same line */
+  display: inline-block;
+  text-align: center;
+  top: 20%;
+  left: 0%;
+  margin: 100px 60px 0 60px;
+  width: 120px;
+  height: 120px;
+
+  background-image: url("../Smiley/img/eye_open.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: 50ms;
+  z-index: 2;
+}
+
+.eye:hover {
+  background-image: url("../Smiley/img/eye_close.png");
+  transition: 50ms;
+  z-index: 2;
+}

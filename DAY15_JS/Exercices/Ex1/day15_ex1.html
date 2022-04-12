@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day15_ex1</title>
+  </head>
+  <body>
+    <script>
+      const humans = [{ username: "joe" }, { username: "toto" }];
+        // creating a new array
+      const newHumans = humans.map((human) => {
+        // FIrst version :  we mutate the existing object passed by reference, one by one, in the fruit variable and return them
+
+
+
+        //human.name = human.name.toUpperCase();
+        //return human;
+
+        // Second version: with new objects
+        return { name: human.name.toUpperCase() };
+      });
+
+      console.log(newHumans);
+    </script>
+  </body>
+</html>

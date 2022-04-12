@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day13_ex5</title>
+  </head>
+  <body>
+    <div id="test-div">
+      <h1>hello</h1>
+      <p class="text-decoration">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam debitis
+        unde voluptas, assumenda temporibus aliquam iure
+      </p>
+      <p class="text-decoration">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam debitis
+        unde voluptas, assumenda temporibus aliquam iure
+      </p>
+      <p class="text-decoration">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam debitis
+        unde voluptas, assumenda temporibus aliquam iure
+      </p>
+    </div>
+
+    <script>
+      /**
+       * create multiple "p" with a class named "text-decoration" and some text inside
+       * select all the p elements using getElementbyClassName
+       * change the color , and underline the text, and anything else you want for ALL the elements
+       * try to avoid repetition */
+
+      const paragraphs = document.getElementsByClassName("text-decoration");
+
+      for (let index = 0; index < paragraphs.length; index++) {
+        paragraphs[index].style.backgroundColor = "red";
+        paragraphs[index].style.textDecoration = "underline";
+      }
+
+      document.querySelectorAll(".text-decoration").forEach((paragraphs) => {
+        paragraphs.style.fontSize = "25px";
+        paragraphs.style.fontFamily = "roboto,sans-serif";
+        // append some text using the shorthand
+        paragraphs.textContent += "new text";
+        paragraphs.classList.add(".thisIsAnewClass");
+        console.log(paragraphs);
+      });
+    </script>
+  </body>
+</html>

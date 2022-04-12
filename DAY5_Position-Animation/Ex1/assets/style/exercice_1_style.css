@@ -1,0 +1,33 @@
+body {
+  margin: 0%;
+}
+
+.boxes {
+  position: absolute;
+  border: 5px black;
+  background-color: aqua;
+
+  width: 200px;
+  height: 600px;
+  padding: 10px;
+  top: 20px;
+
+  font-family: "Roboto", sans-serif;
+  font-variant: small-caps;
+}
+
+.box1 {
+  left: 25%;
+}
+
+.box2 {
+  left: -50%;
+}
+
+.box3 {
+  left: 70%;
+}
+
+.box4 {
+  left: 90%;
+}

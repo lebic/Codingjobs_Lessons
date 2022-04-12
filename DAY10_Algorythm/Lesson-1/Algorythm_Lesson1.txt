@@ -1,0 +1,139 @@
+Variable contain data
+
+Data type :
+-----------
+
+-Integer (1)
+-Float/Decimal (1.0)
+-Boolean (True 1 or false 0)
+-String (one or more characters)
+
+
+
+Arithmetics operators:
+----------------------
+
++ 
+-  
+*
+/
+% (modulo): what is left of the division (eg: even or odd,...)
+
+
+
+
+Fonctions :
+-----------
+
+-A sequence of instruction that does a specific action
+
+-For example : 
+
+ ~ Display/print : Display or print functions are used to display something  on the screen
+ ~ Square/area : Calculate the surface/area of a square and return the result
+
+
+
+
+
+Syntax :
+--------
+
+BEGIN Name of the Algorythm
+START 
+	Instruction 1
+	Instruction 2
+END
+
+
+
+
+
+Syntax using a variable :
+-------------------------
+
+
+BEGIN Name of the Algorythm
+	var NameOfVariable : integer
+	NameOfVariable=42
+START
+      NameOfVariable=60 (We can change the variable later on, 42 is the initial default value)
+      DISPLAY('NameOfVariable')
+END
+
+----------------------------------------------------------------------------------------
+
+
+
+AND = both need to be "true" to work
+OR = only one is needed
+
+
+
+Comparator operator :
+---------------------
+
+It will comprage the two values ->
+
+a>b :greater than
+a<b :lower than
+a>=b  greater or equal
+a<=b : lower or equal
+a==b :equal
+a!=b :not equal/different
+
+Conditionnal logic :
+--------------------
+You use conditionnal logic to test something specific
+Most of the time to compare or check variables
+
+Example: 
+
+IF (a>b) THEN
+   DISPLAY ('a is bigger')
+ELSE IF (a<b)
+   DISPLAY ('b is bigger')
+ELSE
+   DISPLAY ('a and b are equal')
+
+ENDIF
+
+
+
+Once IF statement found a true condition, it skips the rest of the conditions
+
+
+FOR...LOOPS:
+-------------
+
+You want to use a loop when you want to run the same code again and again.
+
+
+FOR (i=0 to 100; step= 1)             /* "Step" mean it adds "1"*/
+    DISPLAY (i)
+    IF (i==50) THEN
+	DISPLAY ('LOTTERY TICKET')
+    ENDIF
+ENDFOR
+
+
+WHILE...LOOPS:
+-------------
+BEGIN LoopAlgo
+    var i : integer
+    i=0
+START
+   WHILE (i<=50) DO
+      DISPLAY (i)
+      i=i+1
+   ENDWHILE
+END
+
+
+-------------------------------------------------------------------------------------
+
+ARRAYS:
+-------
+Array is a variable
+
+It is like a container that contains multiples values which are in separated and unique slots (1,2,3,4....)

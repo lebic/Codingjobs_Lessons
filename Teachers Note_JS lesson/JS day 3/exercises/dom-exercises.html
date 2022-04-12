@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="test">test</div>
+    <p class="text-decoration">test</p>
+    <p class="text-decoration">test</p>
+    <p class="text-decoration">test</p>
+    <p class="text-decoration">test</p>
+    <script>
+      /*
+        - add a div with a unique id
+        - get the div with the appropriate document method
+        - change the div's style
+        */
+      document.getElementById("test").style.backgroundColor = "red";
+      document.getElementById("test").style.fontSize = "40px";
+      document.getElementById("test").style.setProperty("font-weight", "bold");
+
+      /*
+        - create multiple "p" elements with a class named "text-decoration" and some text inside
+        - select all the p elements using getElementsByClassName
+        - change the color, and underline the text, and anything ekse you want for ALL the elements
+        - try to avoid code repetition
+        */
+      const paragraphs = document.getElementsByClassName("text-decoration");
+
+      for (let index = 0; index < paragraphs.length; index++) {
+        paragraphs[index].style.backgroundColor = "green";
+        paragraphs[index].style.setProperty("text-decoration", "underline");
+      }
+
+      /*
+       - do the same using querySelectorAll and a forEach
+       */
+      const paragraphs2 = document.querySelectorAll(".text-decoration");
+
+      paragraphs.forEach((element) => {
+        element.style.fontWeight = "bold";
+      });
+    </script>
+  </body>
+</html>

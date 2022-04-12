@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "nexa", sans-serif;
+  text-transform: capitalize;
+  color: rgb(255, 217, 0);
+  height: 10vh;
+  background-color: rgb(19, 19, 19);
+}
+
+main {
+  padding-top: 5%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0vh;
+  height: 70vh;
+
+  background: url("https://itigic.com/wp-content/uploads/2020/04/star-wars-backgrounds.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card-container {
+  display: flex;
+  justify-content: center;
+}
+#container-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  position: relative;
+  top: 2vh;
+  left: -2vh;
+
+  font-family: "Roboto", sans-serif;
+  color: rgb(56, 56, 56);
+  line-height: 5vh;
+
+  margin-left: 0vh;
+  padding-right: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+
+  width: 30%;
+  border-radius: 2vh;
+  height: fit-content;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 6px 5px rgba(0, 0, 0, 0.15);
+  z-index: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  font-family: "Roboto", sans-serif;
+  color: rgb(56, 56, 56);
+  line-height: 5vh;
+
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 30%;
+  border-radius: 5vh;
+
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 6px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+p:hover {
+  font-weight: 700;
+}

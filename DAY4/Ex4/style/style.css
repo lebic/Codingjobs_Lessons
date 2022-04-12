@@ -1,0 +1,49 @@
+/* Use "*" to apply CSS for everything */
+* {
+  margin: 0;
+}
+
+#nav_menu {
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.158);
+  text-align: center;
+}
+
+#nav_border {
+  margin: 2px;
+  height: 100px;
+}
+
+#nav_item {
+  display: inline-block;
+  text-align: center;
+  font-family: "roboto", sans-serif;
+  font-variant: small-caps;
+  text-decoration: none;
+
+  border: 10px, rgba(0, 0, 0, 0.445);
+  margin: 50px 50px 50px 50px;
+}
+
+#nav_text {
+  display: inline-block;
+  justify-content: center;
+  margin: 0px, 30px, 0px, 30px;
+  padding-block: 10%;
+  padding-inline: 10%;
+  border-width: 2px;
+  color: black;
+  border: black;
+  text-decoration: none;
+}
+
+#section {
+  font-family: "Roboto", sans-serif;
+}
+
+.intro {
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+

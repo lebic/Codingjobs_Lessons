@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #users {
+        margin: 10px;
+
+        border: solid;
+      }
+      #bio {
+        margin: 10px;
+
+        border: solid;
+      }
+      .flex {
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex">
+      <div id="users"></div>
+      <div id="bio"></div>
+    </div>
+
+    <script>
+      const users = [
+        {
+          firstname: "Super",
+          lastname: "Man",
+          profilePicture: "https://i.pravatar.cc/150?img=56",
+          bio: "Superman very interesting bio: he came from space like E.T.",
+        },
+        {
+          firstname: "Bat",
+          lastname: "Man",
+          profilePicture: "https://i.pravatar.cc/150?img=6",
+          bio: "Batman's bio: he has money, power and really likes bats",
+        },
+        {
+          firstname: "Poison",
+          lastname: "Ivy",
+          profilePicture: "https://i.pravatar.cc/150?img=1",
+          bio: "Poison Ivy's bio: she likes plants, and like to see them grow in her ennemy's eye sockets",
+        },
+        {
+          firstname: "Cat",
+          lastname: "Woman",
+          profilePicture: "https://i.pravatar.cc/150?img=9",
+          bio: "Cat Woman: half woman, half cat. Claws: true, nbOfClaws: 20?",
+        },
+      ];
+      /*
+        We received an array of "user" objects (above) from our database/server.
+        We would like to display their firstname, lastname and profile picture on the page (in a "list", one after the other, but not necessarily in a <ul>).
+        After a click on a link, we would like to display their bio somewhere else in the page (in a new container). Each time we click on a "show bio" link it will replace the previous bio, of course.
+
+        Tasks:
+        - Create a container where you will display all the users
+        - create another container where you will display a bio
+        - iterate over the users array and create the relevant HTML elements to display each user's infos in the user container: probably a div container for each user, an h2 for the firstname and lastname, and an img for the profile picture.
+        - In each user HTML element, add a "Show bio" link (<a> element).
+        - When there is a click on the "Show bio" link, display the relevant bio in the bio container. (If you click on Batman's "show bio" link, display Batman's bio in the container)
+        - add a close button inside the bio container to somehow close the bio (you will probably just remove the container's text)
+        */
+
+      const bioContainer = document.querySelector("#bio");
+      const usersContainer = document.querySelector("#users");
+
+      const createUserItem = (user) => {
+        const userContainer = document.createElement("div");
+        usersContainer.appendChild(userContainer);
+        userContainer.classList.add("user");
+
+        // create the user elements: img, firstname...
+        const firstnameElement = document.createElement("h2");
+        userContainer.appendChild(firstnameElement);
+        // use template strings, with backticks: `xxxx`
+        firstnameElement.textContent = `${user.firstname} ${user.lastname}`;
+
+        const profilePictureElement = document.createElement("img");
+        userContainer.appendChild(profilePictureElement);
+        profilePictureElement.src = user.profilePicture;
+
+        const showBioElement = document.createElement("a");
+        userContainer.appendChild(showBioElement);
+        showBioElement.textContent = "Show bio";
+        showBioElement.href = "#bio";
+
+        showBioElement.addEventListener("click", (event) => {
+          // prevent the default behavior of a link without an href value (reloads the page), not really needed here as we have an href=#bio
+          event.preventDefault();
+
+          bioContainer.textContent = user.bio;
+        });
+      };
+
+      users.forEach((user) => {
+        createUserItem(user);
+      });
+    </script>
+  </body>
+</html>

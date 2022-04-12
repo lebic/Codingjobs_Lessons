@@ -1,0 +1,39 @@
+h1 {
+}
+
+#presentation {
+  /*Take the full height */
+  height: 100vh;
+
+  background-image: url("../img/starwars_bg.jpg");
+  background-repeat: no-repeat;
+
+  /*cover : resiez image in the available space
+    contain: display ezntirely in the block  
+  */
+  background-size: cover;
+
+  /**/
+  background-attachment: fixed;
+}
+
+.content {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+#news {
+  height: 50vh;
+  background-image: url("../img/cat.jpg");
+  background-repeat: no-repeat;
+
+  background-position: 50% 5% 50% 5%;
+  background-size: 50% auto;
+  background-clip: border-box;
+
+  background-color: rgb(139, 109, 109);
+  color: aliceblue;
+
+  border-radius: 0px 0px 0px 0px;
+  padding: 40px;
+}

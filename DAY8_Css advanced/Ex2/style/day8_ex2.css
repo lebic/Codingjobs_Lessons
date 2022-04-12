@@ -1,0 +1,26 @@
+* {
+  margin: 10px;
+}
+
+#cards {
+  margin: 40px;
+}
+
+div {
+  padding: 0;
+}
+.col-3 {
+  background-color: rgba(215, 250, 218, 0.986);
+}
+
+img {
+  margin: 0;
+  padding-top: 10px;
+  max-width: 100%;
+}
+
+p {
+  justify-content: center;
+  padding: 10px;
+  text-align: justify;
+}

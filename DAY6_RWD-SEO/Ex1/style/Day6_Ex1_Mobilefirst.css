@@ -1,0 +1,31 @@
+body {
+  background-color: rgba(170, 255, 255, 0.582);
+}
+
+main section:first-of-type {
+  background-color: rgb(205, 79, 255);
+}
+
+/* Portrait only for mobile*/
+
+@media only screen and (max-width: 850px) and (orientation: portrait) {
+    main section:first-of-type {
+      background-color: rgb(255, 174, 25);
+    }
+  }
+
+/* Desktop / Laptop */
+
+@media only screen and (min-width: 850px) {
+  main section:first-of-type {
+    background-color: rgb(255, 25, 159);
+  }
+}
+
+body {
+  background-color: rgba(170, 255, 255, 0.582);
+}
+
+main section:first-of-type {
+  background-color: rgb(86, 228, 180);
+}

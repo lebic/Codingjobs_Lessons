@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * - declare an "add" or "addition" function (reuse the one from the lesson)
+       * - ask (prompt) the user for two numbers
+       * - call the "add" the function with the two user entries (numbers)
+       * - display the result of the addition (console.log)
+       *
+       * */
+
+      const addition = function (a, b) {
+        return a + b;
+      };
+
+      const numberA = parseInt(prompt("first number"));
+      const numberB = parseInt(prompt("second number"));
+
+      const result = addition(numberA, numberB);
+      console.log(result);
+
+      /*
+      Alternative:
+      
+      const addition = function () {
+        const numberA = prompt('first number');
+        const numberB = prompt('second number');
+        return numberA + numberB;
+      };
+
+      const result = addition();
+      console.log(result);
+      */
+    </script>
+  </body>
+</html>

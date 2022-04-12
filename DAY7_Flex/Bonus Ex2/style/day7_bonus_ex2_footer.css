@@ -1,0 +1,33 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  background-color: yellow;
+  padding: 10px;
+  height: 13vh;
+}
+
+.card_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 5px;
+
+  font-family: "roboto", sans-serif;
+  font-variant: small-caps;
+  font-size: 70%;
+}
+
+.icons {
+  height: 5vh;
+  width: 5vh;
+  background-color: rgba(56, 56, 221, 0.479);
+}
+
+#icon-home {
+  background-image: url("/Bonus Ex2/assets/icon-home.png");
+  background-size: cover;
+}

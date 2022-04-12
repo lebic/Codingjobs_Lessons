@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+            - ask/prompt the user for a number multiple times (beware prompt is returning a string!)
+            - insert the number in an array only if it is odd (or greater than something)
+            - inform the user (console.log or alert) about how many odd numbers he/she entered
+            Optional:
+            - put the odd/even check in a function
+        */
+
+      // we can use const as we don't change the reference
+      const numbers = [];
+
+      const isOdd = function (num) {
+        return num % 2 !== 0;
+      };
+      // exercise: get rid of the repetition with a for loop
+
+      for (let index = 0; index < 4; index++) {
+        const number = parseInt(prompt("Give me a number"));
+        if (isOdd(number) === true) {
+          numbers.push(number);
+        }
+      }
+      console.log("you entered " + numbers.length + " odd numbers ");
+    </script>
+  </body>
+</html>

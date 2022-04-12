@@ -1,0 +1,58 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.progress_bar {
+  width: 1%;
+  height: 20px;
+  background: linear-gradient(0.25turn, #18728d, #c5d3f3);
+  opacity: 0%;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.progress_bar_border {
+  width: 100%;
+  height: 20px;
+  border: solid 2px rgba(170, 170, 170, 0.404);
+  background-color: white;
+  box-shadow: 0px 1px 2px rgba(90, 90, 90, 0.212);
+}
+
+.progress_bar:hover {
+  opacity: 100%;
+  animation-name: moving_bar;
+  animation-duration: 5s;
+  animation-delay: 10ms;
+  animation-iteration-count: 1;
+  /*keeps end state*/
+  animation-play-state: running;
+}
+
+@keyframes moving_bar {
+  0% {
+    width: 0%;
+    height: 20px;
+  }
+
+  20% {
+    width: 80%;
+    height: 20px;
+  }
+
+  80% {
+    width: 90%;
+    height: 20px;
+  }
+
+  100% {
+    width: 100%;
+    height: 20px;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day16_JS_classes</title>
+  </head>
+  <body>
+    <script>
+      /* Part1: Create a Cat class with a color property and a meow () method */
+
+      /*
+
+      Part2:
+      -Add an Animal class that can walk() and have legs.
+      -make the Cat inherit from the Animal
+      -Add a Dog class also inheriting from the Animal
+      -Initialize Cat and Dog instances, and pass the number of legs during the construction (needs to go to the Animal constructor)
+      */
+
+      class Animal {
+        constructor(legs, color) {
+          this.legs = legs;
+          this.color = color;
+        }
+        walk() {
+          console.log(`I am walking`);
+        }
+      }
+
+      class Dog extends Animal {
+        constructor(color, legs) {
+          super(legs, color);
+        }
+        bark() {
+          console.log("woof");
+        }
+      }
+      const dog1 = new Dog("green", 4);
+      console.log(dog1);
+
+      class Cat extends Animal {
+        constructor(color, legs) {
+          super(legs, color);
+        }
+        meow() {
+          console.log(`meowwww I am ${this.color} cat`);
+        }
+      }
+      const cat1 = new Cat("red", 3);
+      console.log(cat1);
+    </script>
+  </body>
+</html>

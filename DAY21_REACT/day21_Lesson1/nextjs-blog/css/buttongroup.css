@@ -1,0 +1,100 @@
+:root{
+    --selectiongradient1:  #d133cc;
+    --selectiongradient2:#ffbafc;
+    --fontcolor: #8f8f8fec;
+    --fontcoloredbackground: white;
+}
+
+
+/*------ ARTSYLE QUESTION-----------*/
+
+ h3{
+    display: flex;
+
+    margin-left: 1vh;
+   
+    font-family:'roboto',sans-serif;
+    font-size: 1.7vh;
+    font-weight: 380;
+    color:var(--fontcolor) ;
+    
+}
+#artstyle-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#artstyle-button-container {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 36vh;
+    height: 19vh;
+    outline: none;
+}
+
+/* BUTTON STYLE FOR ALL SELECTION TYPE QUESTIONS*/
+
+
+.artstyle-button {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 16vh;
+    height: 4vh;
+
+    margin: 1vh;
+
+    font-family:'roboto',sans-serif;
+    font-size: 1.5vh;
+    color:var(--fontcolor) ;
+   
+    border-radius: 2vh ;
+    border-color: var(--fontcolor);
+
+    outline:none;
+}
+
+
+/* Clicked state */
+
+.highlight-button { 
+    outline: none !important;
+    
+    box-shadow: 0 0 5px #27272731 !important;
+
+    color:white !important;
+
+    background: linear-gradient(0.25turn,var(--selectiongradient2) ,var(--selectiongradient1));
+
+
+    border: solid;
+    border-radius: 2vh ;
+    border-width: 0.2vh;
+    border-color: var(--selectiongradient1);
+    
+}
+
+.highlight-button:active {
+    outline: none !important;
+    
+    box-shadow: 0 0 5px #27272731;
+
+    color:white ;
+
+    background: linear-gradient(0.25turn,var(--selectiongradient2) ,var(--selectiongradient1));
+
+
+    border: solid;
+    border-radius: 2vh ;
+    border-width: 0.2vh;
+    border-color: var(--selectiongradient1);
+}
+

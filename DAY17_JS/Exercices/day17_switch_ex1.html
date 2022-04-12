@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day17_ex1</title>
+  </head>
+  <body>
+    <script>
+      /*
+      -ask (prompt()) the user for a number
+      - check if the number is between 0 and 10, or between 10 and 20, or between 20 and 30
+      - display a different message (console.log) each timte
+      */
+
+      /*
+
+      const inputUser = parseInt(prompt("Enter a number"));
+
+      if (inputUser >= 0 && inputUser <= 10) {
+        console.log("Number between 0 and 10");
+      } else if (inputUser > 10 && inputUser <= 20) {
+        console.log("Number between 10 and 20");
+      } else if (inputUser > 20 && inputUser <= 30)
+        console.log("Number between 20 and 30");
+      else {
+        console.log("Number above 30");
+      }
+
+      */
+
+      // try to do it with a switch
+      // It's not working inless we use true in the switch(true)
+
+      const inputUser = parseInt(prompt("Enter a number"));
+
+      switch (true) {
+        case inputUser >= 0 && inputUser <= 10:
+          console.log("Number between 0 and 10");
+          break;
+
+        case inputUser > 10 && inputUser <= 20:
+          console.log("Number between 10 and 20");
+          break;
+
+        case inputUser > 20 && inputUser <= 30:
+          console.log("Number between 20 and 30");
+          break;
+
+        //default is active when all the condition above are false
+        default:
+          console.log("Number above 30");
+      }
+    </script>
+  </body>
+</html>

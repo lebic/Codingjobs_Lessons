@@ -1,0 +1,60 @@
+/* Advanced selectors: > + ~
+
+img {
+  ..........;
+}
+
+
+.class > .anotherclass {        <---- for the direct children
+  
+}
+
+.class > img + p {
+  ......;
+}
+
+.class .anotherclass {        <---- all children with the same class name, under the parent class 
+  ..........;
+}
+
+.class.anotherclass {
+  .........;
+}
+
+
+*/
+
+.list > li {
+  font-family: "roboto", sans-serif;
+  font-variant: small-caps;
+}
+
+/* groups: ,
+Selects all matching ellements (independently of their relation) */
+
+.myclass,
+.another-class {
+}
+
+h1,
+h2,
+.div {
+  color: rgba(119, 119, 119, 0.384);
+}
+
+/*Combining selectors: example : any "li" that are in a "ul" which have a "class2" */
+
+ul.class2 li {
+  .....;
+}
+
+/*Without the space, it precises that we want a "p" WITH the class "italic" */
+
+p.italic {
+  font-style: italic;
+}
+
+/* general siblings selectors: ~*/
+
+p.italic ~ li {
+}

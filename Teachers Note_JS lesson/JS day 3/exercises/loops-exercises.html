@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * - create an array of something (at least four elements)
+       * - display every 2 elements of the array with a for loop
+       * - display every element of the array with a for..of loop
+       *
+       */
+
+      const fruits = ["orange", "banana", "apple", "watermelon"];
+
+      // index += 2 --> shorthand for index = index + 2
+      for (let index = 0; index < fruits.length; index += 2) {
+        console.log(fruits[index]);
+      }
+
+      for (const fruit of fruits) {
+        console.log(fruit);
+      }
+
+      /*
+      
+      - iterate over your array with a .forEach method
+      - console.log the item, but capitalized (if array of string), or do an addition (if numbers)
+      */
+      fruits.forEach((fruit) => {
+        console.log(fruit.toUpperCase());
+      });
+
+    </script>
+  </body>
+</html>

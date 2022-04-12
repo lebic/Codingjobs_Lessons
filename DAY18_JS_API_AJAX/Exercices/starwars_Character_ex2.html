@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day18_ex1_luke</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      #container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        font-family: "Roboto", sans-serif;
+        color: rgb(56, 56, 56);
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        width: 50%;
+        border-radius: 5vh;
+
+        height: fit-content;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px 1px 6px 5px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      /*
+        Using star wars API display all character information on the page : name, height, mass
+
+        https://swapi.dev/
+
+        */
+
+      const characterContainer = document.querySelector("#container");
+
+      const createCharacter = (character) => {
+        const nameElement = document.createElement("p");
+        nameElement.textContent = `${character.name} - Height: ${character.height}`;
+        characterContainer.appendChild(nameElement);
+      };
+
+      const characterList = fetch(new Request("https://swapi.dev/api/people"), {
+        method: "GET",
+      })
+        .then((response) => {
+          console.log(response);
+          console.log(response.status);
+          console.log(response.body);
+          return response.json();
+        })
+        .then((characters) => {
+          for (let index = 0; index < characters.results.length; index++) {
+            const characterElement = characters.results[index];
+            createCharacter(characterElement);
+
+            /*
+            body.results.forEach((character) => {
+              createCharacter(character);
+            });*/
+          }
+          console.log(characters);
+        });
+    </script>
+  </body>
+</html>

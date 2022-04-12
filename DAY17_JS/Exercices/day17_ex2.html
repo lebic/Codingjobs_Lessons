@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day17_ex2</title>
+  </head>
+  <body>
+    <script>
+      /*-create an array of number
+      - create a small function that can multiply a number by 10 (we need a parameter and a return value)
+      -use a map() on the array, that is using our function to multiply by 10
+      */
+      const numberList = [1, 50, 20, 30, 50];
+
+      const multiplyBy10 = (n) => {
+        return n * 10;
+      };
+
+      const newNumbers = numberList.map(multiplyBy10);
+    </script>
+  </body>
+</html>

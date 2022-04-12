@@ -1,0 +1,62 @@
+/* Basic syntax: 
+selector {
+    directive-name: value;
+}
+*/
+
+/* Main selector */
+
+/* Class selector */
+.class {
+}
+
+/* ID selector (not best practice) */
+#myid {
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  align-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: coral;
+}
+
+.small_title1 {
+  font-size: 50px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* classes naming convention:
+- should describe what it does ".front-size-small"
+- should describe what you will get ".badge", ".form-control"
+- should NOT describe the content "homepage-title"*/
+
+.a class {
+  /*shorthand: width style style color */
+  font: bold, black, 10px;
+
+  /* Not short */
+  font-weight: bold;
+  font: black;
+  font-size: 10px;
+}
+
+.block {
+  background-color: brown;
+  width: 400px;
+  height: 400px;
+  margin-top: -500px;
+  z-index: 10;
+}
+.container {
+  background-color: aqua;
+  width: 400px;
+  height: 400px;
+  z-index: 0;
+}

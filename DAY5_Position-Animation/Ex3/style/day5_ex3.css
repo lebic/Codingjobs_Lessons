@@ -1,0 +1,60 @@
+* {
+  transition-duration: 1s;
+  transition-delay: 30ms;
+}
+
+.cuby {
+  background-color: aqua;
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+  font-size: 80px;
+  padding: 5px;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  margin: 50px;
+}
+
+.cuby:hover {
+  transform: rotate3d(1, 1, 1, 90deg);
+  transform: translate(50%, 20%);
+  /*animation*/
+  animation-name: frontflip;
+  /*animation duration*/
+  animation-duration: 2s;
+  /*animation will start after 0.3s*/
+  animation-delay: 00.3s;
+  /*number of times*/
+  animation-iteration-count: infinite;
+  /*direction of the animation*/
+  animation-timing-function: ease-in-out;
+}
+
+/* create and control animation with @keyframes */
+@keyframes backflip {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    background-color: yellow;
+  }
+}
+
+@keyframes frontflip {
+  from {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    color: red
+  }
+
+
+
+
+  to {
+    transform: rotate(-360deg);
+    background-color: yellow;
+}

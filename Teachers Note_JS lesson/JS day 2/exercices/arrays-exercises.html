@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       *
+       * - Create a new variable with an empty array
+       * - prompt the user for two entries, insert them in the array
+       * - display the array with console.log
+       * - display an alert with the user entries (alert())
+       *
+       * */
+
+      const list = [];
+
+      const entryA = prompt("Give me a number");
+      const entryB = prompt("Give me another number");
+
+      list.push(entryA, entryB);
+
+      // OR 
+      // list.push(entryB);
+      // list.push(entryA);
+
+      // alternative (we could get rid of variables entryA and entryB)
+      // list.push(prompt("Give me a number"), prompt("Give me another number"));
+      console.log(list);
+
+      alert(list);
+    </script>
+  </body>
+</html>

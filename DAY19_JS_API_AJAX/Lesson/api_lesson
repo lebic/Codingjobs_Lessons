@@ -1,0 +1,16 @@
+To create the api files in a files: 
+1- go in the files
+2- Git bash
+3- npm init
+4- click "Enter" until the question "Is this OK? (yes)"
+
+
+To add the libraries to your small project before starting to work on it
+1. npm install express
+2. It will add 50 packages and create a node_modules files
+
+Never push the node modules thoses files on git
+
+
+
+When you want to use the library, you go on the website

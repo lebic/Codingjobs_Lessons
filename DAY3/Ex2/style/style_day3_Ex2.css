@@ -1,0 +1,31 @@
+.paragraph p {
+  font-size: 20px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.paragraph > .note {
+  font-family: "Verdana", sans-serif;
+  font-style: oblique;
+}
+
+/*Pseudo selectors: used to precise which elements we want: the first one, the last one,... or in which state we expect the element to be when selecting it
+
+: hover
+:active
+:required
+...
+
+*/
+
+p:hover {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgba(165, 42, 42, 0.466);
+  transition: 50ms;
+  transform: translateY(10px);
+}
+
+.container.paragraph:last-child {
+  margin-bottom: none;
+}

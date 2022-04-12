@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day12_ex3_function</title>
+  </head>
+  <body>
+    <script>
+      const addition = function (a, b) {
+        return a + b;
+      };
+
+      const entryA = parseInt(prompt("Give me a number"));
+      const entryB = parseInt(prompt("Give me a another number"));
+
+      const userResult = addition(entryA, entryB);
+      console.log(userResult);
+
+      /* Alternative
+
+        const addition = function () {
+          const entryA = prompt("Give me a number");
+          const entryB = prompt("Give me a another number");
+          return entryA +entryB;
+      };
+
+      const userResult = addition();
+      console.log(userResult);
+      */
+    </script>
+  </body>
+</html>

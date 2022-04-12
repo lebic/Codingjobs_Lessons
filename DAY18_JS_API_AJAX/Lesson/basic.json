@@ -1,0 +1,12 @@
+[
+  {
+    "array": [
+      {
+        "prop1": "string"
+      }
+    ],
+    "booleans": true,
+    "numbers": 50,
+    "null": null
+  }
+]  
