@@ -1,0 +1,29 @@
+
+map([..,..,..], cook) => [..,..,..]  function to replace what is inside an array 
+
+
+example 1: 
+
+const square = (elem) => {
+    return elem*elem
+}
+const output = [1,2,3,4,5].map(square)
+
+
+example 2 :
+
+inoput.map(num => Math.pow(num,2))
+
+
+filter ([..,..,..], cook) => [..,..] predicated function to filter what's inside an array
+
+const even  = (elem) => {
+    return elem%2 === 0
+}
+
+[1,2,3,4,5].filter(even)
+
+
+reduce (([..,..], cook) => ..  function to combine every   
+
+

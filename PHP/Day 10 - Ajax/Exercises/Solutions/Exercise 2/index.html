@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insert movie</title>
+    <style>
+      .error {
+        color: red;
+      }
+
+      .success {
+        color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="results"></div>
+
+    <form method="post">
+      <input type="text" name="title" placeholder="Title" /><br />
+      <input type="text" name="views" placeholder="Views" /><br />
+
+      <select name="director_id" id="directors-list"></select
+      ><br />
+
+      <input type="text" name="poster" placeholder="Poster" /><br />
+      <input type="submit" value="Click here" id="submitBtn" />
+    </form>
+
+    <script>
+      fetch("get-directors.php", {
+        method: "post",
+      })
+        .then((res) => res.text())
+        .then(function (result) {
+          document.getElementById("directors-list").innerHTML = result;
+        });
+
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          let form = this;
+
+          fetch("insert.php", {
+            method: "post",
+            body: new FormData(form),
+          })
+            .then((res) => res.text())
+            .then(function (result) {
+              document.getElementById("results").innerHTML = result;
+            });
+        });
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Example</title>
+</head>
+
+<body>
+
+    <form method="post">
+        <input type="submit" value="Click here" id="submitBtn">
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        /* Check for the click on the button */
+        $('#submitBtn').click(function(e) {
+            // Stop the form to refresh the page
+            e.preventDefault();
+
+            // AJAX Call
+            $.ajax({
+                    url: 'simple.php',
+                    method: 'post'
+                })
+                .done(function(result) {
+                    console.log(result);
+                })
+                .fail(function(result) {
+                    // Fail means : file not found, 500 errors.
+                    // Fail doesnt mean : problem with php, syntax, db...
+                    console.log('AJAX FAILED');
+                })
+        });
+    </script>
+
+</body>
+
+</html>

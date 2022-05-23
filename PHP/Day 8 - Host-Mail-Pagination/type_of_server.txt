@@ -1,0 +1,2 @@
+Shared server: It host with other people.
+Dedicated server: It host your website on that single server dedicated to it. 
